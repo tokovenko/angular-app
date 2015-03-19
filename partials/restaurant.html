@@ -1,0 +1,26 @@
+<div id="restaurant">
+    <div class="alert alert-danger" role="alert" ng-hide="restaurant" style="display: none;">
+        Этот ресторан отсутствует
+    </div>
+    <div class="raw">
+            <h1>{{restaurant.title}}</h1>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <i class="glyphicon glyphicon-star"></i> Рейтинг: {{restaurant.rating}} / 5
+                </li>
+                <li class="list-group-item">
+                    <i class="glyphicon glyphicon-globe"></i> Расстояние до Вас: {{restaurant.distance}} м.
+                </li>
+            </ul>
+            <div class="back">
+                <a href="#restaurants" class="btn btn-success btn-sm">
+                    <i class="glyphicon glyphicon-arrow-left"></i> Назад
+                </a>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <div id="map"></div>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+</div>
